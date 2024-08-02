@@ -1,0 +1,46 @@
+<div class="contt d-flex justify-content-center align-items-center">
+    <div class="formContt">
+        <h1 class="text-center my-3 textCol">Log In</h1>
+        <hr>
+        <form name="loginForm" novalidate ng-submit="submitForm()">
+            <div class="row my-5">
+                <div class="d-flex justify-content-center align-items-center inpDiv my-3" ng-class="{'has-error': loginForm.username.$invalid && loginForm.username.$touched}">
+                    <input type="text" name="username" class="inputBorder text-center" placeholder="Username" ng-model="username" required>
+                    <i class="fa-solid fa-user px-2 i"></i>
+                    
+                </div>
+                <div class="error d-flex justify-content-center" ng-show="loginForm.username.$invalid && loginForm.username.$touched">
+                    <small class="text-danger">Username is required</small>
+                </div>
+                <div class="d-flex justify-content-center align-items-center inpDiv my-3" ng-class="{'has-error': loginForm.password.$invalid && loginForm.password.$touched}">
+                    <input type="password" name="password" class="inputBorder text-center" placeholder="Password" ng-model="password" required>
+                    <i class="fa-solid fa-lock px-2 i"></i>
+                    
+                </div>
+                <div class="error d-flex justify-content-center" ng-show="loginForm.password.$invalid && loginForm.password.$touched">
+                    <small class="text-danger">Password is required</small>
+                </div>
+            </div>
+            <hr>
+            <div class="row justify-content-between">
+                <div class="col mx-2">
+                    <input type="checkbox" ng-model="showPassword" ng-change="togglePasswordVisibility()"><small class="mx-2">Show Password</small>
+                </div>
+                <div class="col mx-2">
+                    <small><a href="">Forget Password?</a></small>
+                </div>
+            </div>
+            <div class="row my-3">
+                <div class="d-flex justify-content-center">
+                    <button type="submit" class="btn btn-light w-75" ng-disabled="loginForm.$invalid">Log In</button>
+                </div>
+            </div>
+            <div class="row my-3">
+                <div class="d-flex justify-content-center">
+                    <button type="button" class="btn btn-light w-75" ng-click="guestBtn()">Log in as guest</button>
+                </div>
+            </div>
+        </form>
+        <small class="text-dark mx-3">Don't Have an account?</small><a href="#!/signup" class="mx-2 text-warning">Sign Up</a>
+    </div>
+</div>

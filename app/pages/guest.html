@@ -1,0 +1,13 @@
+<header ng-include='"/app/templates/navbar.html"'></header>
+
+<h1 class="text-center my-2">Hi <span class="text-primary">{{username}}</span>&nbsp;!</h1>
+  <p class="text-center h6 my-2 text-warning">Here's your puzzle to solve</small></p>
+  <div class="container">
+    <div class="row">
+      <div class="col-3 bg-primary d-flex align-items-center justify-content-center m-2 rounded"
+           ng-repeat="i in imgArr track by $index"
+           ng-click="clickfn($index)">
+        <img ng-src="{{i.src}}" alt="" width="100px" class="p-2" ng-show="revealedIndices.includes($index)">
+        <img src="/app/assets/images/mystery_img.png" alt="" width="100px" class="p-2" ng-show="!revealedIndices.includes($index)">
+      </div>
+    </div>

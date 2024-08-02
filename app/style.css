@@ -1,0 +1,99 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+html,
+body {
+  width: 100%;
+  font-family: "Poppins", sans-serif;
+  /* font-style: italic; */
+}
+.contt{
+  height: 100vh;
+  width: 100%;
+  background-image: url("/app/assets/images/backgound.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.formContt{
+  
+  width: 50%;
+  background-color: rgba(250, 235, 215, 0.372);
+  
+  -webkit-backdrop-filter: blur(5px);
+  backdrop-filter: blur(5px);
+  border-radius: 20px;
+  
+}
+.textCol{
+  color: rgba(255, 68, 0, 0.554);
+}
+
+
+.inputBorder{
+  outline: none;
+  border-radius: 5px;
+  border: none;
+  width: 85%;
+  padding: 5px;
+  background-color: rgba(250, 235, 215, 0.372) ;
+}
+.i{
+  color: rgba(69, 67, 64, 0.467) !important; 
+}
+#signup{
+  height: 100vh;
+  width: 100%;
+  
+  background-image: url('/app/assets/images/vectorstock_27419327.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.signupform{
+  
+  width: 50%;
+  background-image: linear-gradient(to bottom, rgb(82, 187, 205), rgb(114, 199, 214), rgb(114, 199, 214), rgb(14, 90, 125));
+  box-shadow: 1px 1px 1px 1px rgb(141, 140, 140), 12px 12px 8px 10px rgb(144, 144, 144);
+}
+input{
+  border-radius: 5px;
+  border: 1px solid black;
+  padding: 5px 20px;
+}
+.fnl{
+  width: 45%;
+}
+.rm{
+  width: 100%;
+}
+.nvaback{
+  background-color: brown;
+}
+.hndw{
+  height: 150px;
+  
+}
+.frnds{
+  background-color: rgb(5, 79, 126);
+  border-radius: 10px;
+  border-top-left-radius: 70px;
+}
+.freq{
+  height: 13vh;
+  background-color: rgb(22, 174, 149);
+  border-radius: 12px;
+  overflow-y: auto;
+}
+.colli{
+  color: rgb(226, 186, 40);
+}
+.freqiso{
+  height: 100px;
+  background-color: yellow;
+  border-radius: 20px;
+  
+}
+
+

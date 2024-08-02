@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="app" ng-controller="MainController">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>{{title}}</title>
+
+    <!-- Icon -->
+    <link rel="icon" type="image/x-icon" href="app/assets/icon/cube_ico.png" />
+
+    <!-- Bootstrap -->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="library/bootstrap/bootstrap.min.css"
+    />
+
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="library/fontawesome/css/all.css"
+    />
+
+    <!-- Poppins Font -->
+    <link rel="stylesheet" type="text/css" href="library/font/poppins.css" />
+
+    <!-- Style CSS -->
+    <link rel="stylesheet" type="text/css" href="app/style.css" />
+
+    <!-- External CSS -->
+  </head>
+  <body>
+    <ng-view></ng-view>
+
+    <!-- Angular -->
+    <script
+      type="text/javascript"
+      src="library/angular/angular.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="library/angular/angular-route.min.js"
+    ></script>
+
+    
+
+    <!-- jQuery -->
+    <script type="text/javascript" src="library/jquery/jquery.min.js"></script>
+
+    <!-- Bootstrap -->
+    <script
+      type="text/javascript"
+      src="library/bootstrap/bootstrap.bundle.min.js"
+    ></script>
+
+    <!-- Font Awesome -->
+    <script type="text/javascript" src="library/fontawesome/js/all.js"></script>
+
+    <!-- Main JS -->
+    <script type="text/javascript" src="app/app.js"></script>
+
+    <!-- Route -->
+    <script type="text/javascript" src="app/app.route.js"></script>
+
+    <!-- External JS -->
+    <!-- Controllers -->
+     <script src="/app/js/controllers/login.js"></script>
+     <script src="/app/js/controllers/signup.js"></script>
+     <script src="/app/js/controllers/guest.js"></script>
+     <script src="/app/js/controllers/multiuser.js"></script>
+
+    <!-- Directives -->
+  </body>
+</html>
